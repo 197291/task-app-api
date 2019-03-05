@@ -9,7 +9,7 @@ const App = require('./app');
 const app = new App();
 
 function handleError(err, ctx) {
-  if (ctx == null) {
+  if (ctx === null) {
     console.error( err, '----Unhandled exception occured-----');
   }
 }

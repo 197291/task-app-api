@@ -11,6 +11,7 @@ if (result.error) {
 }
 
 const env = process.env.NODE_ENV || 'development';
+
 const configs = {
   production: {
     port: process.env.API_PORT_PRODUCTION || 7071
@@ -25,6 +26,7 @@ const configs = {
     port: 7072,
   }
 };
+
 const config = Object.assign(configs.development, configs[env]);
 
 module.exports = config;

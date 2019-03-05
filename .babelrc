@@ -1,0 +1,13 @@
+{
+  "presets": [ "@babel/preset-env" ],
+  "plugins": [
+    "import-graphql",
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "polyfill": false,
+        "regenerator": true
+      }
+    ]
+  ]
+}
